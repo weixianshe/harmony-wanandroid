@@ -1,0 +1,8 @@
+{
+  "scanDir": [
+    "src/main/ets/components",
+    "src/main/ets/interceptors"
+  ],
+  "saveGeneratedFile": false,
+  "autoObfuscation": false
+}
