@@ -5,6 +5,7 @@ import { PageUrl } from "../constants/pageUrl";
 export class CheckLoginStatus implements IHMInterceptor{
   handle(info: HMInterceptorInfo): HMInterceptorAction {
     const isLogin = AppStorage.get('isLogin') as boolean
+    console.log('wt:',isLogin)
     if(!!isLogin) {
       return HMInterceptorAction.DO_NEXT
     } else {

@@ -32,7 +32,7 @@ export struct TabPage {
         TabContent(){
           Mine()
         }.tabBar(this.buildTab('我的',3,$rawfile('mine.png'),$rawfile('mine_select.png')))
-      }.barHeight(56).barWidth($r('app.string.w_full')).barMode(BarMode.Fixed).onChange((index)=>{
+      }.barHeight(56).barWidth($r('app.string.w_full')).barMode(BarMode.Fixed).scrollable(false).onChange((index)=>{
         this.currentIndex = index
       })
     }.width($r('app.string.w_full')).height($r('app.string.h_full'))
