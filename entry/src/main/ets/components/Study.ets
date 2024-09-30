@@ -1,12 +1,12 @@
 import { HMRouter } from "@hadss/hmrouter"
 import { PageUrl } from "../constants/pageUrl"
 
-@HMRouter({ pageUrl:PageUrl.Home })
+@HMRouter({ pageUrl:PageUrl.Study })
 @ComponentV2
-export struct Home {
+export struct Study {
   build() {
     Column() {
-       Text('首页')
+      Text('Study')
     }.width($r('app.string.w_full')).height($r('app.string.h_full')).justifyContent(FlexAlign.Center)
   }
 }

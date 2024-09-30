@@ -1,7 +1,7 @@
 import { HMInterceptor, HMInterceptorAction, HMInterceptorInfo, HMRouterMgr, IHMInterceptor } from "@hadss/hmrouter";
 import { PageUrl } from "../constants/pageUrl";
 
-@HMInterceptor({ interceptorName:'checkLoginStatus', global:true })
+@HMInterceptor({ interceptorName:'checkLoginStatus' })
 export class CheckLoginStatus implements IHMInterceptor{
   handle(info: HMInterceptorInfo): HMInterceptorAction {
     const isLogin = AppStorage.get('isLogin') as boolean

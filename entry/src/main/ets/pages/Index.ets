@@ -9,7 +9,7 @@ struct Index {
   build() {
     Column() {
       HMNavigation({
-        navigationId: 'mainNavigation', homePageUrl:PageUrl.Home, options: {
+        navigationId: 'mainNavigation', homePageUrl:PageUrl.TabPage, options: {
           standardAnimator: HMDefaultGlobalAnimator.STANDARD_ANIMATOR,
           dialogAnimator: HMDefaultGlobalAnimator.DIALOG_ANIMATOR,
           modifier: this.modifier
